@@ -12,6 +12,7 @@ pipeline {
                 script {
                     def awsRegion = 'ap-south-1' // Replace with your AWS region
                     def ec2InstanceId = 'i-0b9816bc51c2dc387' // Replace with your EC2 instance ID
+                    def ec2PublicIP = '3.108.189.102'
 
                     // Use the AWS credentials you configured in Jenkins
                     withAWS(credentials: 'AWS', region: awsRegion) {
